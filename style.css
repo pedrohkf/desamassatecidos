@@ -1,0 +1,1290 @@
+@font-face {
+    font-family: genera;
+    src: url("/fonts/Wahyu\ and\ Sani\ Co.\ -\ Genera\ SemiBold.ttf");
+}
+
+@font-face {
+    font-family: genera-ligth;
+    src: url("/fonts/Wahyu\ and\ Sani\ Co.\ -\ Genera\ Alt\ Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #ffe7f54d;
+    overflow-x: hidden;
+}
+
+.conteudo {
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-indicators img {
+    width: 70px;
+    display: block;
+}
+
+.carousel-indicators button {
+    width: max-content !important;
+}
+
+.carousel-indicators {
+    position: unset;
+}
+
+#carouselDemo {
+    width: 90%;
+    margin-top: 10rem;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+span {
+    background-color: #ed008e2d;
+    border-radius: 5px;
+}
+
+.produto {
+    background-image: url('/imgs/background.png');
+    width: 100%;
+    height: 39rem;
+    padding-top: 1rem;
+}
+
+.head {
+    padding: 3rem 20%;
+    height: 7rem;
+    background-color: #ed008e;
+}
+
+.head img {
+    width: 13rem;
+}
+
+.pagina-inicio {
+    display: flex;
+    padding: 0rem 20%;
+}
+
+.pagina-inicio h2 {
+    font-family: genera;
+    font-size: 38px;
+}
+
+
+.info p {
+    font-family: genera-ligth;
+    width: 100%;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+.info-text {
+    font-size: 20px;
+    width: 90%;
+    font-family: genera-ligth;
+}
+
+#img-produto1 {
+    width: 55%;
+}
+
+.img-produto {
+    display: none;
+}
+
+.vantagens-inicio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    width: 65%;
+}
+
+.vantagens-inicio {
+    margin: 0;
+    padding: 0;
+}
+
+.vantagens-inicio li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f75cb9;
+    height: 2rem;
+    border-radius: 20px;
+    padding-top: 0.5rem;
+}
+
+.vantagens-inicio img {
+    width: 3.7rem;
+    padding: 0 5%;
+    margin-bottom: 0.5rem;
+}
+
+.compreAgora {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 8rem;
+}
+
+.compreAgora img {
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 3px 15px 3px 15px;
+}
+
+.button:hover {
+    width: 15.3rem;
+    height: 3.3rem;
+    transition: 0.3s;
+}
+
+
+#button {
+    border: none;
+    background-color: rgb(106, 252, 106);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(35, 68, 2);
+    box-shadow: 3px 3px 10px 1px black;
+}
+
+#button:hover,
+#button:focus {
+    cursor: pointer;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    height: 60vh;
+}
+
+.itens h2 {
+    font-size: 30px;
+    color: #ed008e;
+}
+
+.itens ul {
+    display: flex;
+    column-gap: 7rem;
+}
+
+.itens li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.itens img {
+    width: 60%;
+}
+
+.itens p {
+    width: 13rem;
+    text-align: center;
+}
+
+.itens div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens div img {
+    width: 14rem;
+    padding-top: 0.4rem;
+}
+
+.resultados {
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    color: #f75cb9;
+}
+
+.resultados h2 {
+    color: #ed008e;
+    font-family: genera;
+}
+
+.resultados button {
+    width: 38rem;
+    height: 2.5rem;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(127, 219, 127);
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animaLeft 0.3s forwards;
+}
+
+.contato img {
+    width: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.contato img:hover {
+    cursor: pointer;
+}
+
+.contato:hover {
+    cursor: pointer;
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: 0.3s;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formasdeuso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    font-size: 20px;
+    background-image: url('/imgs/fundoVerde.png');
+    height: 120vh;
+    padding-top: 15rem;
+}
+
+.formasdeuso img {
+    width: 8rem;
+    padding-left: 1rem;
+}
+
+.formasdeuso p {
+    padding-left: 4rem;
+    width: 75%;
+    color: black;
+}
+
+.produto1 {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 11rem;
+    border-radius: 23px;
+    background-color: white;
+}
+
+.produto2 {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 11rem;
+    border-radius: 23px;
+    background-color: white;
+}
+
+.produto3 {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 11rem;
+    border-radius: 23px;
+    background-color: white;
+}
+
+.biodegradavel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    margin-top: 10rem;
+    height: 60vh;
+    width: 70rem;
+}
+
+.biodegradavel img {
+    width: 100%;
+    padding-left: 2rem;
+
+}
+
+.biodegradavel p {
+    font-size: 20px;
+    width: 80%;
+}
+
+
+.biodegradavel-button {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.biodegradavel-button img {
+    width: 15rem;
+    padding-top: 0.5rem;
+}
+
+
+.vantagens {
+    background-image: url('/imgs/fundoAzul.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 76.6vh;
+    color: white;
+    margin-top: 7rem;
+    column-gap: 2rem;
+}
+
+.vantagens h2 {
+    font-size: 35px;
+}
+
+.vantagens-button {
+    padding-top: 10rem;
+}
+
+.img-vantagens {
+    width: 40rem;
+    padding-top: 14rem;
+}
+
+.text-vantagens {
+    display: flex;
+    flex-direction: column;
+    width: 44rem;
+    row-gap: 0rem;
+    font-size: 17px;
+    padding-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.vantagens img {
+    width: 100%;
+    padding-left: 10%;
+}
+
+
+.vantagens-button {
+    height: 20vh;
+    padding-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vantagens-button img {
+    width: 15rem;
+    padding-top: 0.5rem;
+}
+
+.formasdeuso-button {
+    height: 20vh;
+    padding-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formasdeuso-button img {
+    width: 15rem;
+    padding-top: 0.5rem;
+}
+
+.redes-sociais {
+    background-color: #ed008e;
+    padding-left: 5%;
+    color: white;
+    margin-bottom: -1rem;
+}
+
+.redes-sociais a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 2rem;
+}
+
+
+.redes-sociais li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.redes-sociais p {
+    padding-left: 15%;
+    width: 120%;
+}
+
+.info-carrosel h2,
+.info-carrosel p {
+    color: white;
+}
+
+#carouselDemo h2 {
+    font-size: 35px;
+    font-family: genera;
+}
+
+#carouselDemo p {
+    font-size: 20px;
+}
+
+.duvidas {
+    padding-top: 10rem;
+    color: white;
+}
+
+#conteudo {
+    background-color: #ed008e;
+    text-align: center;
+}
+
+.produtos-precos {
+    color: white;
+    padding-top: 5rem;
+    font-size: 25px;
+    font-family: genera;
+}
+
+.precos-imgs {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 4rem;
+    height: 70vh;
+}
+
+.precos-imgs img {
+    width: 15rem;
+}
+
+.precos-imgs img:hover {
+    width: 15.5rem;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: rgb(28, 29, 28);
+    height: 8vh;
+    color: rgb(136, 136, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes animaLeft {
+    to {
+        transform: initial;
+        opacity: initial;
+    }
+}
+
+@media only screen and (max-width: 1530px) {
+    body {
+        transition: 0.3s;
+    }
+
+    .pagina-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #ed008e;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-text p {
+        text-align: center;
+    }
+
+    #img-produto1 {
+        display: none;
+    }
+
+    .img-produto {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 25rem;
+    }
+
+    .compreAgora {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 10rem;
+    }
+
+    .compreAgora img {
+        width: 10rem;
+    }
+
+    .itens {
+        margin-top: 20rem;
+    }
+
+    .itens ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        width: 78%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .resultados {
+        padding-top: 10rem;
+    }
+
+    .vantagens {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .vantagens-button {
+        padding-top: 3rem;
+    }
+
+    .img-vantagens {
+        width: 33rem;
+        padding-top: 17rem;
+    }
+
+    .text-vantagens {
+        display: flex;
+        padding-top: 4rem;
+    }
+
+    .biodegradavel {
+        width: 150%;
+        margin-top: 15rem;
+        padding: 0;
+    }
+
+    .biodegradavel p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .biodegradavel-button {
+        width: 18rem;
+        height: 30vh;
+        padding-top: 5rem;
+    }
+
+    .formasdeuso div {
+        width: 45rem;
+        font-size: 18px;
+        display: flex;
+    }
+
+    #carouselDemo {
+        width: 50rem;
+    }
+
+    .precos-imgs {
+        justify-content: center;
+        width: 50rem;
+        column-gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .precos-imgs img {
+        width: 11rem;
+    }
+
+    .precos-imgs img:hover {
+        width: 11.4rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+
+    .vantagens {
+        height: 200vh;
+    }
+
+
+    .formasdeuso-button {
+        margin-top: 20rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 995px) {
+
+    .itens ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 0;
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .text-vantagens {
+        font-size: 15px;
+        text-align: start;
+    }
+
+    .precos-imgs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 863px) {
+    #carouselDemo {
+        width: 100%;
+    }
+
+    #conteudo {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .produtos-precos p {
+        font-size: 21px;
+    }
+
+    .duvidas img {
+        width: 44rem;
+    }
+
+    .precos-imgs img {
+        width: 10rem;
+    }
+
+    .precos-imgs img:hover {
+        width: 10.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 766px) {
+    .formasdeuso div {
+        width: 35rem;
+    }
+
+    .produto1,
+    .produto2 {
+        height: 12rem;
+    }
+
+    .produto3 {
+        height: 8rem;
+    }
+
+    .biodegradavel p {
+        width: 100%;
+
+        font-size: 18px;
+    }
+
+    .biodegradavel img {
+        width: 18rem;
+    }
+
+    .vantagens {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-image: url('/imgs/backgroundAzul-4.png');
+        height: 126vh;
+    }
+
+    .img-vantagens {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .img-vantagens h2 {
+        text-align: center;
+        font-size: 20px;
+        width: 15rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .vantagens img {
+        width: 20rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .resultados {
+        padding-bottom: 3rem;
+    }
+
+    .itens ul {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .itens p {
+        width: 8rem;
+    }
+
+    .itens img {
+        width: 5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #carouselDemo {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .vantagens {
+        height: 53.5vh;
+
+    }
+
+    .formasdeuso {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .vantagens {
+        height: 60.5vh;
+
+    }
+
+    .formasdeuso {
+        height: 77vh;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .itens li {
+        width: 4rem;
+    }
+
+    .itens ul {
+        column-gap: 7rem;
+    }
+
+    .itens img {
+        width: 5rem;
+    }
+
+    .itens p {
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    #button {
+        font-size: 18px;
+    }
+
+    .resultados button {
+        width: 105%;
+        font-size: 10px;
+    }
+
+    .duvidas img {
+        width: 30rem;
+    }
+
+    .produtos-precos {
+        width: 105%;
+        height: 280vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produtos-precos div {
+        width: 60%;
+    }
+
+    .precos-imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        row-gap: 2rem;
+        height: 250vh;
+    }
+
+    .precos-imgs img {
+        width: 20rem;
+    }
+
+    .precos-imgs img:hover {
+        width: 20rem;
+    }
+
+    .text-vantagens {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .vantagens {
+        height: 148.8vh;
+    }
+
+    .itens ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .itens {
+        height: 170vh;
+        margin-top: 28rem;
+    }
+
+    .itens img {
+        width: 8rem;
+    }
+
+    .resultados {
+        padding-top: 12rem;
+    }
+
+    .resultados img {
+        width: 30rem;
+    }
+
+    .biodegradavel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .biodegradavel img {
+        width: 25rem;
+    }
+
+    .biodegradavel div {
+        width: 60%;
+    }
+
+    .biodegradavel p {
+        width: 100%;
+    }
+
+    .biodegradavel-button {
+        padding-top: 6rem;
+    }
+
+    .formasdeuso {
+        background-image: url('/imgs/fundoVerde-2.png');
+        height: 132vh;
+        margin: 0;
+        padding-top: 4.3rem;
+    }
+
+    .formasdeuso div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+
+    .formasdeuso-button {
+        margin-top: 5rem;
+    }
+
+    .produto1 {
+        height: 18rem;
+    }
+
+    .produto2 {
+        height: 18rem;
+    }
+
+    .produto3 {
+        height: 13rem;
+    }
+
+    .formasdeuso p {
+        width: 95%;
+    }
+
+    .precos-imgs img {
+        width: 11.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .info {
+        width: 90%;
+    }
+
+    .resultados img {
+        width: 22rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contato {
+        margin: 0.5rem 0rem;
+    }
+
+    .biodegradavel {
+        width: 100%;
+    }
+
+    .biodegradavel div {
+        width: 100%;
+    }
+
+    .biodegradavel p {
+        width: 100%;
+    }
+
+
+    .biodegradavel img {
+        width: 100%;
+    }
+
+    .biodegradavel-button {
+        padding-top: 7.8rem;
+    }
+
+    .duvidas {
+        width: 90%;
+    }
+
+    .duvidas img {
+        width: 20rem;
+    }
+
+    .resultados button {
+        width: 15rem;
+    }
+
+    #button {
+        font-size: 15px;
+    }
+
+    .precos-imgs img {
+        width: 18rem;
+    }
+
+    #carouselDemo {
+        width: 25rem;
+    }
+
+    .produtos-precos {
+        width: 100%;
+    }
+
+    .formasdeuso-button {
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+
+    .img-vantagens img {
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+
+    .vantagens {
+        height: 117vh;
+    }
+
+    .formasdeuso {
+        height: 106vh;
+    }
+
+    .vantagens-inicio {
+        width: 90%;
+    }
+
+    .img-produto {
+        width: 20rem;
+    }
+
+    .img-vantagens img {
+        width: 15rem;
+    }
+
+    .formasdeuso {
+        padding-top: 3.5rem;
+    }
+
+    .produto2 {
+        height: 20.5rem;
+    }
+
+    .produtos-precos {
+        width: 100%;
+    }
+
+    .precos-imgs {
+        width: 100%;
+    }
+
+    .precos-imgs img {
+        width: 15rem;
+    }
+
+    .resultados {
+        padding: 0;
+    }
+
+    .resultados img {
+        width: 17rem;
+    }
+
+    #carouselDemo {
+        width: 100%;
+    }
+
+    .compreAgora {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .formasdeuso {
+        height: 102.1vh;
+    }
+
+    .itens {
+        height: 145vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .resultados {
+        padding-top: 20rem;
+        text-align: center;
+    }
+
+    .vantagens-inicio img {
+        width: 3rem;
+    }
+
+    .img-vantagens img {
+        width: 10rem;
+    }
+
+    .formasdeuso {
+        margin-top: 5rem;
+        height: 143vh;
+    }
+
+    .formasdeuso div {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        padding: 0;
+    }
+
+    .formasdeuso img {
+        width: 6rem;
+    }
+
+    .formasdeuso p {
+        width: 100%;
+        text-align: start;
+        padding-left: 0.5rem;
+    }
+
+    .produto2 {
+        height: 20.5rem;
+    }
+
+    .vantagens {
+        height: 162vh;
+    }
+
+    #conteudo {
+        margin-top: 5rem;
+    }
+
+    .precos-imgs img {
+        width: 10rem;
+    }
+
+    .produtos-precos {
+        height: 220vh;
+    }
+
+    .precos-imgs {
+        height: 190vh;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .vantagens {
+        height: 128vh;
+
+    }
+
+    .formasdeuso {
+        height: 113vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .vantagens {
+        height: 158vh;
+
+    }
+
+    .formasdeuso {
+        height: 143vh;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .vantagens {
+        height: 144vh;
+    }
+
+    .formasdeuso {
+        height: 129vh;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .duvidas img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .img-produto {
+        width: 15rem;
+    }
+
+    #carouselDemo {
+        width: 100%;
+    }
+
+    .produtos-precos {
+        height: 280vh;
+    }
+
+    .precos-imgs {
+        height: 240vh;
+    }
+
+    .precos-imgs img {
+        width: 10rem;
+    }
+
+    .precos-imgs img:hover {
+        width: 10rem;
+    }
+
+    .img-vantagens img {
+        width: 5rem;
+    }
+
+    .text-vantagens {
+        row-gap: 0;
+        column-gap: 0;
+        font-size: 14px;
+    }
+
+    .biodegradavel-button {
+        margin-top: 5rem;
+    }
+
+    .formasdeuso {
+        height: 146.5vh;
+        margin-top: 10rem;
+    }
+
+}
